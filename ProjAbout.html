@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - OMBOK Art Gallery</title>
+    <link rel="stylesheet" type="text/css" href="ProjAbout.css" />
+    <meta name="description" content="About OMBOK Art Gallery - fostering professionalism in art">
+</head>
+<body style="background-image: url(Media/Others/HHHHHHHH.png); background-repeat: no-repeat; background-size: cover;">
+    <!-- Navigation Bar -->
+    <header>
+        <nav aria-label="Main Navigation">
+            <a href="ProjHomeP.html" class="logo">
+                <img src="Media/icons/OMBOKLOGO_white_text.png" alt="OMBOK Art Gallery Logo">
+            </a>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="ProjHomeP.html"><b>HOME</b></a></li>
+                <li><a href="ProjAbout.html"><b>ABOUT</b></a></li>
+                <li><a href="ProjGallery.html"><b>GALLERY</b></a></li>
+                <li><a href="ARTIST.html"><b>ARTIST</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- About Section -->
+    <div class="about">
+        <h1>About OMBOK Art Gallery</h1>
+        <p>Welcome to OMBOK Art Gallery, where art transcends boundaries and connects us all.</p>
+        <p>At OMBOK Art Gallery, our mission is to foster professionalism and cultivate the correct attitude towards art. We strive to create a space where artists and art lovers can come together to appreciate, discuss, and celebrate the beauty of artistic expression.</p>
+        <p>Founded by Ombok Villamor, our gallery showcases a diverse range of artworks, from classic paintings to contemporary sculptures. Each piece in our collection tells a story and reflects the unique vision of its creator.</p>
+        <p>We believe that art has the power to inspire, provoke thought, and bring people together. Join us in our journey to explore the world of art and discover the stories behind each masterpiece.</p>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+        <ul>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="OUR TEAM.html">Our Team</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

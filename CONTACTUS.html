@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="CONTACTUS.css" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav aria-label="Main Navigation">
+            <a href="ProjHomeP.html" class="logo">
+                <img src="/Media/icons/OMBOKLOGO_white_text.png" alt="OMBOK Art Gallery Logo">
+            </a>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="ProjHomeP.html"><b>HOME</b></a></li>
+                <li><a href="ProjAbout.html"><b>ABOUT</b></a></li>
+                <li><a href="ProjGallery.html"><b>GALLERY</b></a></li>
+                <li><a href="ARTIST.html"><b>ARTIST</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <p>We would love to hear from you! Please fill out the form below to get in touch with us.</p>
+        
+        <form action="/submit_form" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="social-media">
+            <h2>Connect with Us</h2>
+            <ul>
+                <li>Email: <a href="mailto:info@omviartgallery.com">info@ombokartgallery.com</a></li>
+                <li>Facebook: <a href="https://www.facebook.com/ombokgallery" target="_blank">OMBOK Art Gallery</a></li>
+                <li>Instagram: <a href="https://www.instagram.com/ombokartgallery" target="_blank">@ombokartgallery</a></li>
+                <li>Twitter: <a href="https://twitter.com/ombokartgallery" target="_blank">@ombokartgallery</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Footer Section -->
+    <footer>
+        <ul>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="OUR TEAM.html">Our Team</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

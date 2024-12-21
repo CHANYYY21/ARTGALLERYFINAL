@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMBOK Art Gallery - OMBOK VILLAMOR</title>
+    <link rel="stylesheet" type="text/css" href="ARTIST.css" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav aria-label="Main Navigation">
+            <a href="ProjHomeP.html" class="logo">
+                <img src="/Media/icons/OMBOKLOGO_white_text.png" alt="OMBOK Art Gallery Logo">
+            </a>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="ProjHomeP.html"><b>HOME</b></a></li>
+                <li><a href="ProjAbout.html"><b>ABOUT</b></a></li>
+                <li><a href="ProjGallery.html"><b>GALLERY</b></a></li>
+                <li><a href="ARTIST.html"><b>ARTIST</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="artist-intro">
+        <h1>OMBOK VILLAMOR</h1>
+        <img src="/Media/Profile Picture/Ombok.jpg" alt="Ombok Cleofe Villamor">
+        <p>"I am forever inspired by the sea." Ombok Villamor is a visual artist who works in paint and sculpture. His artworks, both figurative and non-representational, resemble stylized marine life creatures from which he predominantly draws inspiration. He likens coral reefs to a sanctuary for every living creature on earth, which influences his choice of palette that is distinctly symphonic, deep, and vibrant.</p>
+    </div>
+    
+    <section class="timeline">
+        <h2>Artistic Journey</h2>
+        <ul>
+            <li><strong>Year:</strong> further research needed</li>
+            <!-- Add more timeline events as needed -->
+        </ul>
+    </section>
+    
+    <!-- Footer Section -->
+    <footer>
+        <ul>
+            <li><a href="/CONTACTUS.html">Contact Us</a></li>
+            <li><a href="/OUR TEAM.html">Our Team</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

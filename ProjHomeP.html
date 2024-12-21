@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMBOK Art Gallery</title>
+    <link rel="stylesheet" type="text/css" href="ProjHomeP.css" />
+    <meta name="description" content="OMBOK Art Gallery - fostering professionalism in art">
+</head>
+<body>
+    <!-- Video Background -->
+    <video id="vidbg" autoplay muted loop>
+        <source src="Media/Video/Artist Reception_ “Liquescent” by Ombok Villamor.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        <p>Your browser does not support HTML5 video. Here is a <a href="Media/Video/Artist Reception_ “Liquescent” by Ombok Villamor.mp4">link to the video</a> instead.</p>
+    </video>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav aria-label="Main Navigation">
+            <a href="ProjHomeP.html" class="logo">
+                <img src="Media/icons/OMBOKLOGO_white_text.png" alt="OMBOK Art Gallery Logo">
+            </a>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="ProjHomeP.html"><b>HOME</b></a></li>
+                <li><a href="ProjAbout.html"><b>ABOUT</b></a></li>
+                <li><a href="ProjGallery.html"><b>GALLERY</b></a></li>
+                <li><a href="ARTIST.html"><b>ARTIST</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Centered Content -->
+    <div class="center-content">
+        <h1>OMBOK Art Gallery</h1>
+        <p>Foster professionalism and cultivate the correct attitude.</p>
+        <a href="ProjGallery.html" class="button">Visit Gallery</a>
+    </div>
+    
+
+    <!-- Footer Section -->
+    <footer>
+        <ul>
+            <li><a href="CONTACTUS.html">Contact Us</a></li>
+            <li><a href="OUR TEAM.html">Our Team</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

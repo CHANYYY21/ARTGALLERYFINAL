@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - OMBOK Art Gallery</title>
+    <link rel="stylesheet" href="ProjGallery.css">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <header>
+        <nav aria-label="Main Navigation">
+            <a href="ProjHomeP.html" class="logo">
+                <img src="Media/icons/OMBOKLOGO_white_text.png" alt="OMBOK Art Gallery Logo">
+            </a>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="ProjHomeP.html"><b>HOME</b></a></li>
+                <li><a href="ProjAbout.html"><b>ABOUT</b></a></li>
+                <li><a href="ProjGallery.html"><b>GALLERY</b></a></li>
+                <li><a href="ARTIST.html"><b>ARTIST</b></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gallery section -->
+    <section class="gallery">
+        <h1>ART GALLERY</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <a href="PAINTINGS HTML/paintings.html">
+                    <img src="Media/Paintings/arcadian-aura.jpeg" alt="Arcadian Aura">
+                    <div class="overlay">
+                        <p>PAINTINGS</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="/3D PAINTINGS HTML/3D Painting.html">
+                    <img src="Media/3D Paintings/fairies-haven.webp" alt="Fairies Haven">
+                    <div class="overlay">
+                        <p>3D PAINTINGS</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="/SCULPTURE HTML/SCULPTURE.html">
+                    <img src="Media/Sculpture/a-place-to-wonder.jpeg" alt="A Place to Wonder">
+                    <div class="overlay">
+                        <p>SCULPTURES</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <ul>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+            <li><a href="OUR TEAM.html">Our Team</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
