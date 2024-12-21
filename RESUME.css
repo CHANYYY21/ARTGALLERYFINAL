@@ -1,0 +1,231 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: black;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: space-between;
+}
+
+nav .logo {
+    padding-left: 25px;
+}
+
+nav .logo img {
+    height: 150px; /* Adjusted height */
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding-right: 25px;
+    font-size: 20px;
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    border: 2px solid gray;
+    padding: 5px;
+    color: white;
+    border-radius: 30px;
+    background-color: grey;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Main Content */
+main {
+    margin-top: 120px; /* Adjusted margin for fixed navbar */
+    padding: 20px;
+    flex: 1;
+}
+
+/* Resume Header Section */
+.resume-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.header-details {
+    flex: 1;
+}
+
+.header-details h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.header-details p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+/* Section Styling */
+.section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.section p, .section ul, .section table {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/* Table Styling */
+.section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.section table th, .section table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.section table th {
+    width: 150px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+    border: 2px solid gray;
+    padding: 5px;
+    color: white;
+    border-radius: 30px;
+    background-color: grey;
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 768px) {
+    .resume-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .team-container {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0 20px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        padding-right: 15px;
+        background-color: rgba(0, 0, 0, 0.8); /* Background for mobile menu */
+        position: absolute;
+        top: 80px; /* Below the navbar */
+        right: 0;
+        width: 100%; /* Full width for mobile menu */
+        padding: 5px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li a {
+        padding: 15px; /* Padding for better touch interaction */
+    }
+    
+    nav .logo img {
+        height: 100px; 
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .section table th, .section table td {
+        font-size: 0.9rem;
+        padding: 5px;
+    }
+}
