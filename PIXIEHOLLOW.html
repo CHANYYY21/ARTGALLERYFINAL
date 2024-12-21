@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXIE HOLLOW</title>
+    <link rel="stylesheet" type="text/css" href="BENEATHTHERAINBOW.css" />
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav aria-label="Main Navigation">
+            <a href="/ProjHomeP.html" class="logo">
+                <img src="/Media/icons/OMBOKLOGO_white_text.png" alt="OMBOK Art Gallery Logo">
+            </a>
+            <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="/ProjHomeP.html"><b>HOME</b></a></li>
+                <li><a href="/ProjAbout.html"><b>ABOUT</b></a></li>
+                <li><a href="/ProjGallery.html"><b>GALLERY</b></a></li>
+                <li><a href="/ARTIST.html"><b>ARTIST</b></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Sculpture Details -->
+    <section class="sculpture-details">
+        <img src="/Media/Sculpture/pixie-hollow.jpeg" alt="Pixie Hollow">
+        <div class="details">
+            <h1>PIXIE HOLLOW</h1>
+            <p>26 x 17 x 18 Inches</p>
+            <p>Brass</p>
+            <p>2023</p>
+        </div>
+    </section>
+    
+    <!-- Artist Section -->
+    <section class="artist-section">
+        <h2 class="artist-title">ARTIST</h2>
+        <div class="artist-details">
+            <img src="/Media/Others/OMBOK.jpg" alt="Ombok Cleofe Villamor">
+            <div class="bio">
+                <h1>Ombok Cleofe Villamor</h1>
+                <p>"I am forever inspired by the sea." Ombok Villamor is a visual artist who works in paint and sculpture. His artworks, both figurative and non-representational, resemble stylized marine life creatures from which he predominantly draws inspiration. He likens coral reefs to a sanctuary for every living creature on earth, which influences his choice of palette that is distinctly symphonic, deep, and vibrant.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <ul>
+            <li><a href="/CONTACTUS.html">Contact Us</a></li>
+            <li><a href="/OUR TEAM.html">Our Team</a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

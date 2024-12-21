@@ -1,0 +1,236 @@
+/* Full page setup */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: black;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    justify-content: space-between;
+}
+
+nav .logo {
+    padding-left: 25px;
+}
+
+nav .logo img {
+    height: 150px;
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding-right: 25px;
+    font-size: 20px;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    border: 2px solid gray;
+    padding: 5px;
+    color: white;
+    border-radius: 30px;
+    background-color: grey;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Sculpture Details */
+.sculpture-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 125px auto 20px;
+    max-width: 1200px;
+}
+
+.sculpture-details img {
+    width: 48ch;
+    height: 55ch;
+    border-radius: 10px;
+}
+
+.details {
+    max-width: 600px;
+}
+
+.details h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.details p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Artist Section */
+.artist-section {
+    margin-top: 50px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.artist-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.artist-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.artist-details img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.bio {
+    max-width: 600px;
+}
+
+.bio h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.bio p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+    border: 2px solid gray;
+    padding: 5px;
+    color: white;
+    border-radius: 30px;
+    background-color: grey;
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 768px) {
+    .sculpture-details, .artist-details {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .sculpture-details img, .artist-details img {
+        width: auto;
+        height: auto;
+        max-height: 100%;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+
+    .details, .bio {
+        max-width: 100%;
+    }
+
+    .details h1, .bio h1 {
+        font-size: 2rem;
+    }
+
+    .details p, .bio p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        padding-right: 15px;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        padding: 5px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li a {
+        padding: 15px;
+    }
+
+    nav .logo img {
+        height: 100px; 
+    }
+    
+    .hamburger {
+        display: block;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}
